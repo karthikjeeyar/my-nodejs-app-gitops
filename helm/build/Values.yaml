@@ -25,6 +25,6 @@ image:
   registry: quay.io
   organization: karthik_jk
   host: quay.io
-  name: my-nodejs-app
+  name: demo-nodejs-ex
   tag: pr-1
   secretName: registry-credentials
