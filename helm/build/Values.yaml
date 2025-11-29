@@ -1,0 +1,30 @@
+
+app:
+  name: my-nodejs-app
+  namespace: my-nodejs-app-dev
+  cluster: your-cluster.example.com
+
+git:
+  branch: main
+  repo: https://github.com/karthikjeeyar/my-nodejs-app.git
+  org: karthikjeeyar
+  name: my-nodejs-app
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+# Sealed Secrets configuration
+# Sealed Secrets allow you to store encrypted secrets in Git
+# To use: 1) Install Sealed Secrets Controller, 2) Seal your secret with kubeseal, 3) Set enabled: true
+sealedSecrets:
+  enabled: true  # Set to true to use Sealed Secrets
+  dockerconfigjson: 
+
+
+image:
+  registry: quay.io
+  organization: karthik_jk
+  host: quay.io
+  name: my-nodejs-app
+  tag: pr-1
+  secretName: registry-credentials
