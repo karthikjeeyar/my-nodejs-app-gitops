@@ -34,10 +34,10 @@ spec:
         namespace: {{ .Values.app.namespace }}
       spec:
         params:
-          - name: IMAGE_NAME
+          - name: IMAGE
             value: '{{ .Values.image.registry }}/{{ .Values.image.organization }}/{{ .Values.image.name }}:{{ .Values.image.tag }}'
           - name: IMAGE_TAG
-            type: {{ .Values.image.tag }}
+            type: '{{ .Values.image.tag }}'
           - name: PATH_CONTEXT
             value: .
           - name: VERSION
