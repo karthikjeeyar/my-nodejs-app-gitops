@@ -33,7 +33,7 @@ spec:
           tekton.dev/pipeline: {{ .Values.app.name }}
         namespace: {{ .Values.app.namespace }}
       spec:
-         params:
+        params:
           - name: IMAGE
             value: '{{ .Values.image.registry }}/{{ .Values.image.organization }}/{{ .Values.image.name }}'
           - name: IMAGE_TAG
