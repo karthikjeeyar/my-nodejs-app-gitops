@@ -6,9 +6,9 @@ app:
 
 git:
   branch: master
-  repo: https://github.com/karthikjeeyar/demo-nodejs-ex.git
+  repo: https://github.com/karthikjeeyar/nodejs-ex.git
   org: karthikjeeyar
-  name: demo-nodejs-ex
+  name: nodejs-ex
   host: github.com
   token: ''
   webhookSecret: ''
