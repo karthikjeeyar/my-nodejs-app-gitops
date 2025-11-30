@@ -46,7 +46,7 @@ spec:
           name: {{ .Values.app.name }}-build
         status: null
         workspaces:
-          - name: workspace
+          - name: shared-data
             volumeClaimTemplate:
               metadata:
                 labels:
