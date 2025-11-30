@@ -9,7 +9,7 @@ image:
   host: quay.io
   name: demo-nodejs-ex
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 replicaCount: 1
 
